@@ -26,6 +26,7 @@ This boilerplate does the following things;
 * Copies files such as fonts and images from the ```src``` folder to the ```public``` folder.
 * Minifies all the .js and .css files on building
 * Groups media query selectors on build
+* Adds a command to easily add a component
 
 ## How to start
 
@@ -44,6 +45,16 @@ yarn run dev
 ```
 
 This will start a development server at ```localhost:8000```
+
+### Add new component
+
+We have a command that will generate a folder with the files needed for a component:
+
+```
+yarn component name
+```
+
+Where **name** is the name you want to give the component. Use dashes(-) in stead of spaces.
 
 ### Build
 
