@@ -4,7 +4,7 @@
 	"main": "index.js",
 	"author": "Mohammed Mulazada <thisismoniac@gmail.com>",
 	"engines": {
-		
+		"node": "10.14"
 	},
 	"scripts": {
 		"postinstall": "yarn run build:dir",
