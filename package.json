@@ -3,6 +3,9 @@
 	"version": "2.0.0",
 	"main": "index.js",
 	"author": "Mohammed Mulazada <thisismoniac@gmail.com>",
+	"engines": {
+		
+	},
 	"scripts": {
 		"postinstall": "yarn run build:dir",
 		"start": "node app.js",
