@@ -1,13 +1,13 @@
 const express = require('express')
 const ENV = require('dotenv').config({
-	path: __dirname + '/config/.env'
+	path: './config/.env'
 }).parsed
 const bodyParser = require('body-parser')
 const app = express()
 const fs = require('fs')
 const PORT = ENV.NODE_ENV === 'production' ? ENV.PORT : ENV.DEV_PORT
 
-app.set('views', './views')
+app.set('views', __dirname+'/views')
 app.set('view engine', 'ejs')
 
 app.use(express.static('public'))
