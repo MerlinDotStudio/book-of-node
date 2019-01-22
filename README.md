@@ -32,7 +32,7 @@ This boilerplate does the following things;
 
 After cloning the repository, head to the folder and run:
 
-```
+```sh
 yarn install
 ```
 
@@ -42,13 +42,13 @@ First of all, you need an .env file. We included a command that will generate an
 
 The command is
 
-```
+```sh
 yarn run build:env
 ```
 
 You need to configure the .env file, otherwise the server won't have a port to run your project on. You can copy this code example and paste it in the .env file found at ```config/.env```.
 
-```
+```sh
 NODE_ENV=development
 
 PORT=8004
@@ -66,7 +66,7 @@ Please note that the DEV_PORT is the number that you will have to add after the 
 
 To start developing, run the command:
 
-```
+```sh
 yarn run dev
 ```
 
@@ -76,7 +76,7 @@ This will start a development server at ```localhost:8000```
 
 We have a command that will generate a folder with the files needed for a component:
 
-```
+```sh
 yarn component name
 ```
 
@@ -86,6 +86,22 @@ Where **name** is the name you want to give the component. Use dashes(-) in stea
 
 To build your project, run the command:
 
-```
+```sh
 yarn run build
+```
+
+### Sqip + lazyload
+
+In this setup we use sqip to generate low res svg's that can be used as placeholders. In the same time lazyloading will (lazy) load the correct file and swap them out.
+
+To generate the placeholders you can run the build command or directly run:
+
+```sh
+yarn run build:sqip
+```
+
+To set up the `HTML` correctly use the following:
+
+```html
+<img class="lazy" data-src="/images/FHD.jpg" src="/images/FHD.svg" alt="">
 ```
