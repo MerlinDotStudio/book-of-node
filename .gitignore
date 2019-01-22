@@ -62,3 +62,5 @@ typings/
 
 # Ignore the build folder
 public
+
+.DS_Store

@@ -4,7 +4,7 @@
 	"main": "./app/server.js",
 	"author": "Mohammed Mulazada <thisismoniac@gmail.com>",
 	"engines": {
-		"node": "10.14"
+		"node": "^10.14"
 	},
 	"scripts": {
 		"postinstall": "yarn run build:dir",
@@ -25,9 +25,10 @@
 		"watch:js": "watchify ./app/views/index.js -t babelify -o ./public/scripts/index.js -v --debug",
 		"watch:node": "nodemon ./app/server.js",
 		"hotreload": "yarn run livereload . --exts 'ejs, css, js' -d",
-		"build:all": "concurrently \"yarn run build:dir\" \" yarn run build:css \" \"yarn run build:js\" \"yarn run copy:all\"",
+		"build:all": "concurrently \"yarn run build:dir\" \" yarn run build:css \" \"yarn run build:js\" \"yarn run build:sqip\" \"yarn run copy:all\"",
 		"build:css": "postcss --config './postcss.config.js' ./app/views/*.css  -d ./public/styles/ --verbose",
 		"build:js": "browserify ./app/views/index.js -t babelify | uglifyjs -cm -o ./public/scripts/index.js",
+		"build:sqip": "foreach -i \"./app/src/images/*.svg\" -g \"./app/src/images/*\" -x \"sqip -o #{dir}/#{name}.svg #{dir}/#{name}#{ext}\"",
 		"copy:all:watch": "concurrently \"yarn run copy:fonts -w\" \"yarn run copy:jsStatic -w\" \"yarn run copy:images -w\" \"yarn run copy:cssStatic -w\"",
 		"copy:all": "concurrently \"yarn run copy:fonts\" \"yarn run copy:jsStatic\" \"yarn run copy:images\" \"yarn run copy:cssStatic\"",
 		"copy:fonts": "cpx \"./app/src/fonts/**\" ./public/fonts",
@@ -48,7 +49,10 @@
 				"@babel/preset-env"
 			]
 		],
-		"plugins": ["transform-async-to-generator", "@babel/transform-runtime"]
+		"plugins": [
+			"transform-async-to-generator",
+			"@babel/transform-runtime"
+		]
 	},
 	"browserslist": [
         "last 1 version",
@@ -81,6 +85,7 @@
         "cssnano": "^4.1.8",
         "ejs-lint": "^0.3.0",
         "eslint": "^5.1.0",
+        "foreach-cli": "^1.8.1",
         "livereload": "^0.7.0",
         "mkdirp": "^0.5.1",
         "nodemon": "^1.17.5",
@@ -97,6 +102,7 @@
         "postcss-preset-env": "^6.5.0",
         "rimraf": "^2.6.2",
         "seng-generator": "^0.8.0",
+      	"sqip": "^0.3.3",
         "stylelint": "^9.3.0",
         "uglify-js": "^3.3.27",
         "watchify": "^3.11.0",
