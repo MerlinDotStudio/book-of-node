@@ -34,7 +34,8 @@
 		"copy:fonts": "cpx \"./app/src/fonts/**\" ./public/fonts",
 		"copy:jsStatic": "cpx \"./app/src/scripts/**.js\" ./public/scripts",
 		"copy:images": "cpx \"./app/src/images/**\" ./public/images",
-		"copy:cssStatic": "cpx \"./app/src/styles/**\" ./public/styles"
+		"copy:cssStatic": "cpx \"./app/src/styles/**\" ./public/styles",
+		"preview": "ngrok http -config=./config/ngrok.yml -config=./config/ngrok-secrets.yml  8000"
 	},
 	"license": "MIT",
 	"dependencies": {
@@ -88,6 +89,7 @@
         "foreach-cli": "^1.8.1",
         "livereload": "^0.7.0",
         "mkdirp": "^0.5.1",
+	"ngrok": "^3.1.0",
         "nodemon": "^1.17.5",
         "onchange": "^5.2.0",
         "prettier": "^1.16.1",
