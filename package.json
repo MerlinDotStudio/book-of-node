@@ -97,7 +97,7 @@
         "postcss-cssnext": "^3.1.0",
         "postcss-custom-media": "^7.0.7",
         "postcss-custom-properties": "^8.0.9",
-        "postcss-discard-comments": "^4.0.0",
+        "postcss-discard-comments": "^4.0.2",
         "postcss-import": "^12.0.1",
         "postcss-mixins": "^6.2.0",
         "postcss-nested": "^4.1.1",
