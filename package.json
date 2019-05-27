@@ -85,7 +85,7 @@
         "css-mqpacker": "^7.0.0",
         "cssnano": "^4.1.10",
         "ejs-lint": "^0.3.0",
-        "eslint": "^5.1.0",
+        "eslint": "^5.16.0",
         "foreach-cli": "^1.8.1",
         "livereload": "^0.7.0",
         "mkdirp": "^0.5.1",
