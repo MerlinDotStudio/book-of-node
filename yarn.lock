@@ -1917,7 +1917,7 @@ charm@~0.2.0:
   resolved "https://registry.yarnpkg.com/charm/-/charm-0.2.1.tgz#41bcc1e86ac4baeefa466561c50c37dd6eef8899"
   integrity sha1-QbzB6GrEuu76RmVhxQw33W7viJk=
 
-chokidar@^1.6.0, chokidar@^1.7.0:
+chokidar@^1.6.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-1.7.0.tgz#798e689778151c8076b4b360e5edd28cda2bb468"
   integrity sha1-eY5ol3gVHIB2tLNg5e3SjNortGg=
@@ -5099,12 +5099,12 @@ levn@^0.3.0, levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-livereload@^0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/livereload/-/livereload-0.7.0.tgz#38238dd155ffb251191697f737b6b13f471da115"
-  integrity sha512-PHnIGczQEvmCctDvRTWylA+1wSwE0/eFm+LkNhlmlAFus/aCRlVE97UOLOf6TUGLmZyfg7z7twG37ZiOgNJAyQ==
+livereload@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/livereload/-/livereload-0.8.0.tgz#9af99cf8a262152cf7176b320accfc5d2ae4f8bf"
+  integrity sha512-Hi5Na6VIK3e8zlgOS50fu+iOTKWj5hM0BE7NKpZkwnfWTnktTjA38ZUXa2NlJww8/GrdVhpnxdqlLad5fkO27g==
   dependencies:
-    chokidar "^1.7.0"
+    chokidar "^2.1.5"
     opts ">= 1.2.0"
     ws "^1.1.5"
 
