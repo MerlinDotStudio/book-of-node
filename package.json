@@ -92,7 +92,7 @@
 		"ngrok": "^3.1.0",
 		"nodemon": "^1.19.1",
 		"onchange": "^6.0.0",
-		"prettier": "^1.17.1",
+		"prettier": "^1.18.2",
 		"postcss-cli": "^6.1.2",
 		"postcss-cssnext": "^3.1.0",
 		"postcss-custom-media": "^7.0.7",
