@@ -40,9 +40,9 @@
 	"license": "MIT",
 	"dependencies": {
 		"body-parser": "^1.18.3",
-		"dotenv": "^6.2.0",
+		"dotenv": "^8.0.0",
 		"ejs": "^2.6.1",
-		"express": "^4.16.3"
+		"express": "^4.17.1"
 	},
 	"babel": {
 		"presets": [
@@ -73,9 +73,9 @@
 	},
 	"devDependencies": {
 		"@babel/core": "^7.4.5",
-		"@babel/plugin-transform-runtime": "^7.2.0",
-		"@babel/preset-env": "^7.2.3",
-		"@babel/runtime": "^7.3.1",
+		"@babel/plugin-transform-runtime": "^7.5.0",
+		"@babel/preset-env": "^7.4.5",
+		"@babel/runtime": "^7.5.1",
 		"autoprefixer": "^9.5.1",
 		"babel-plugin-transform-async-to-generator": "^6.24.1",
 		"babelify": "^10.0.0",
@@ -87,27 +87,27 @@
 		"ejs-lint": "^0.3.0",
 		"eslint": "^5.16.0",
 		"foreach-cli": "^1.8.1",
-		"livereload": "^0.7.0",
+		"livereload": "^0.8.0",
 		"mkdirp": "^0.5.1",
 		"ngrok": "^3.1.0",
 		"nodemon": "^1.19.1",
-		"onchange": "^5.2.0",
-		"prettier": "^1.16.1",
+		"onchange": "^6.0.0",
+		"prettier": "^1.18.2",
 		"postcss-cli": "^6.1.2",
 		"postcss-cssnext": "^3.1.0",
-		"postcss-custom-media": "^7.0.7",
-		"postcss-custom-properties": "^8.0.9",
+		"postcss-custom-media": "^7.0.8",
+		"postcss-custom-properties": "^8.0.10",
 		"postcss-discard-comments": "^4.0.2",
 		"postcss-import": "^12.0.1",
 		"postcss-mixins": "^6.2.0",
 		"postcss-nested": "^4.1.2",
-		"postcss-preset-env": "^6.5.0",
+		"postcss-preset-env": "^6.6.0",
 		"rimraf": "^2.6.2",
-		"seng-generator": "^0.8.0",
+		"seng-generator": "^0.9.0",
 		"sqip": "^0.3.3",
-		"stylelint": "^9.3.0",
-		"uglify-js": "^3.3.27",
+		"stylelint": "^10.1.0",
+		"uglify-js": "^3.6.0",
 		"watchify": "^3.11.1",
-		"yarn": "^1.12.3"
+		"yarn": "^1.16.0"
 	}
 }
