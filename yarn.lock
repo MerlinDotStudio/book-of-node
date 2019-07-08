@@ -8241,10 +8241,10 @@ send@0.17.1:
     range-parser "~1.2.1"
     statuses "~1.5.0"
 
-seng-generator@^0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/seng-generator/-/seng-generator-0.8.0.tgz#96277aef483b50dc277115a9ce70b173c0713232"
-  integrity sha1-lid670g7UNwncRWpznCxc8BxMjI=
+seng-generator@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/seng-generator/-/seng-generator-0.9.0.tgz#ce8ba84c4cda67b3c11026168453b9dc4a7a5347"
+  integrity sha512-uNyvsHmi18CvRyZAv1vLtbUIMCxINaT7dDeMwByx4UNNcFBoOPdPAyhSaQlVOGPtRSm+t3mlj4PbLzddi73yJw==
   dependencies:
     async "^2.1.5"
     chalk "^1.1.3"
