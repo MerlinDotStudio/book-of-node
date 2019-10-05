@@ -87,7 +87,7 @@
 		"ejs-lint": "^0.3.0",
 		"eslint": "^6.5.1",
 		"foreach-cli": "^1.8.1",
-		"livereload": "^0.8.1",
+		"livereload": "^0.8.2",
 		"mkdirp": "^0.5.1",
 		"ngrok": "^3.2.5",
 		"nodemon": "^1.19.3",
