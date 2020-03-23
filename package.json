@@ -73,7 +73,7 @@
 	},
 	"devDependencies": {
 		"@babel/core": "^7.7.2",
-		"@babel/plugin-transform-runtime": "^7.6.2",
+		"@babel/plugin-transform-runtime": "^7.9.0",
 		"@babel/preset-env": "^7.6.3",
 		"@babel/runtime": "^7.7.2",
 		"autoprefixer": "^9.7.1",
